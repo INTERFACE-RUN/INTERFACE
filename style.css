@@ -1,0 +1,268 @@
+body {
+  background-color: white;
+  color:#141414;
+}
+
+
+@font-face {
+  font-family: 'DSEG7';
+  font-weight: bold;
+  src: url('themes/920/fonts/DSEG7/DSEG7ClassicMini-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'MajorMonoDisplay';
+  font-weight: 400;
+  src: url('themes/4550/fonts/MajorMonoDisplay-Regular.ttf') format('truetype');
+}
+
+
+
+@keyframes
+fadeout {
+  from {opacity:1;}
+  to {opacity:0;}
+}
+
+@keyframes
+fadein {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+html{width:100%; height:100%; overflow:hidden; touch-action: none;}
+body{width: 100%; height: 100%;overflow: hidden;touch-action: none;} 
+*:focus {outline: none;} 
+
+#background-canvas{
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  position: absolute;
+  overflow: hidden;
+  margin:auto;
+  padding:0;
+  z-index: 0;
+  background: white;
+  cursor: crosshair;
+}
+
+#timeSlider{
+cursor: ns-resize;
+}
+
+#crux {
+  background-color: white;
+  width:300px;
+  height: 300px;
+  min-width: 300px;
+  max-width:560px;
+  min-height: 300px;
+  padding:5px;
+  position:absolute; 
+  left:0; 
+  right:0;
+  top:2%; 
+  bottom:0;
+  overflow:hidden;
+  z-index: 2;
+  cursor:grab;
+}
+
+#crux-canvas{
+  position:absolute; 
+  left:0; right:0;
+  top:0; bottom:0;
+  z-index: 2;
+  width:100%;
+  height: 100%;
+}
+
+.altDivs{
+  width:145px;
+  height: 28%;
+  right:0;
+  position:absolute;   
+  z-index: 3;
+  min-width: 145px;
+  min-height: 145px;
+  top:70%; bottom:0;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+.altCanvases{
+position:absolute; 
+left:0; right:0;
+top:0; bottom:0;
+z-index: 2;
+width:100%;
+height: 100%;
+}
+
+#chargement {
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,1);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+
+#menuList{
+  font-family: sans-serif;
+  font-size: large;
+  border: 1px dashed gray;
+  padding: 2%;
+  height: 40%;
+  overflow-y: scroll;
+
+}
+
+#menuConteneur{
+  position: absolute;
+  top:25%;
+  width: 50%;
+  height: 100%;
+}
+#menuTabs{
+    display: flex;
+    font-family: sans-serif;
+    font-size: large;
+    border: 1px dashed gray;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.tabMenu{
+  padding: 3%;
+  border: 1px solid darkgray;
+  width:33.33%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menuItem{
+  border: 1px dotted gray;
+  padding: 2%;
+  cursor:pointer;
+  color:darkslategray;
+  display: flex;
+  align-items: center;
+    justify-content: space-between;
+}
+
+#loadingbar{
+  font-family: sans-serif;
+  font-weight: 900;
+  letter-spacing:30px;
+  text-align: center;
+  font-size: 60px;
+  background-color: rgb(163, 163, 163);
+  color: transparent;
+  text-shadow: 2px 2px 2px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  pointer-events: none;
+  width:100%;
+  height:20%;
+  left:0; right:0;
+  top:0; bottom:0;
+  margin-top:5%;
+  max-width:100%;
+  max-height:100%;
+  overflow:auto;
+}
+
+#starter{
+padding: 3%;
+font-weight: bolder;
+font-size: 6em;
+border: 1px solid darkgray;
+cursor: pointer;
+font-family: sans-serif;
+font-weight: 900;
+letter-spacing:10px;
+text-align: center;
+font-size: 30px;
+background-color: rgb(163, 163, 163);
+color: transparent;
+text-shadow: 2px 2px 2px rgba(255,255,255,0.5);
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+}
+
+.starticon{
+font-size: 3em;
+margin-bottom: 10px;
+cursor: pointer;
+color: white;
+}
+
+#loadDisplay{
+position: absolute;
+text-align: center;
+color: gray;
+pointer-events: all;
+width:40%;
+height:40%;
+left:0; right:0;
+top:90%; bottom:0;
+margin:auto;
+max-width:100%;
+max-height:100%;
+overflow:auto;
+}
+
+#altSwitch {
+width: 50px;
+height: 50px;
+z-index: 1;
+position: absolute;
+cursor:not-allowed;
+}
+
+#compteur {
+text-align: right;
+}
+
+ #profile{
+  border-radius: 20px;
+ }
+
+ #editor{
+  position: absolute;
+  z-index: 24;
+  width: 100%;
+  height:100%;
+  background-color: white;
+}
+
+#playOpt {
+ 
+  position: absolute;
+  background: rgba(50,50,50,0.8);
+  z-index: 25;
+  left: calc(100% - 40px);
+  top: 10px;
+  color: rgb(163, 163, 163);
+  font-size: 10px;
+  border-radius: 30px;
+  left: calc(100% - 50px);
+  padding: 5px;
+}
+
+#backToMenu{
+  display: block;
+  opacity: 0;
+}
+

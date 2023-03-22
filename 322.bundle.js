@@ -1,0 +1,1 @@
+onmessage=function(t){const e=t.data.pile,n=t.data.game,a=e.url;fetch(a).then((t=>t.json())).then((t=>{const o=a.substring(0,a.lastIndexOf("/")+1);t.content.forEach((t=>{t.hasOwnProperty("img")&&(t.img=o+t.img)})),t.id=t.contract+t.token_id,postMessage({pile:e,game:n,token:t})}))};

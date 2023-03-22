@@ -1,0 +1,131 @@
+{
+  "contract": "KT1-interface",
+  "token_id": 0,
+  "title": "Tutoriel",
+  "author": "INTERFACE",
+  "theme": "920",
+  "content": [
+    {
+      "incipit": "Bienvenue sur le tutoriel d'INTERFACE.RUN \nPour poursuivre, appuyez sur \"continuer\".",
+      "code": "racine",
+      "alts": [
+        {
+          "altNum": 1,
+          "text": "continuer",
+          "code": "carte2"
+        }
+      ],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "img": "pegas1.png",
+      "selfColor": "#61bfda"
+    },
+    {
+      "incipit": "INTERFACE.RUN utilise un concept simple: le lecteur lit une suite de paragraphes dans une fenêtre, puis doit choisir une des options disponibles pour afficher la suite.",
+      "code": "carte2",
+      "alts": [
+        {
+          "altNum": 1,
+          "text": "Suite",
+          "code": "cart3"
+        }
+      ],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "selfColor": "#61bfda"
+    },
+    {
+      "incipit": "Il peut y avoir plusieurs options disponibles.",
+      "code": "cart3",
+      "alts": [
+        {
+          "altNum": 1,
+          "text": "Choisir l'option 1",
+          "code": "nextop"
+        },
+        {
+          "altNum": 2,
+          "text": "Choisir l'option 2",
+          "code": "nextop"
+        }
+      ],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "selfColor": "#61bfda"
+    },
+    {
+      "incipit": "Il peut même y avoir plus de deux options. Lorsque c'est le cas, un bouton \"SWITCH\" devient disponible. Cliquer sur ce bouton permet de circuler entre les options disponibles.",
+      "code": "nextop",
+      "alts": [
+        {
+          "altNum": 1,
+          "text": "Option 1",
+          "code": "cart5"
+        },
+        {
+          "altNum": 2,
+          "text": "Option 2",
+          "code": "cart5"
+        },
+        {
+          "altNum": 3,
+          "text": "Option 3",
+          "code": "cart5"
+        }
+      ],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "selfColor": "#61bfda"
+    },
+    {
+      "incipit": "Vous pouvez relire le contenu des paragraphes et options choisis dans le passé en remontant la fenêtre principale comme vous le feriez sur une page normale.",
+      "code": "cart5",
+      "alts": [
+        {
+          "altNum": 1,
+          "text": "Suite",
+          "code": "slider"
+        }
+      ],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "selfColor": "#61bfda"
+    },
+    {
+      "incipit": "Vous pouvez aussi naviguer rapidement en utilisant l'ascenseur situé à droite de cette fenêtre.",
+      "code": "slider",
+      "alts": [
+        {
+          "altNum": 1,
+          "text": "Suite",
+          "code": "Themes"
+        }
+      ],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "selfColor": "#61bfda"
+    },
+    {
+      "incipit": "Cette configuration est commune à tous les thèmes. L'interface graphique peut changer selon les histoires, mais ces grands principes de lecture et de navigation restent communs.",
+      "code": "Themes",
+      "alts": [
+        {
+          "altNum": 1,
+          "text": "Fin",
+          "code": "fin"
+        }
+      ],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "selfColor": "#61bfda"
+    },
+    {
+      "incipit": "Merci d'avoir suivi ce tutoriel. Vous pouvez désormais fermer cette fenêtre et commencer votre lecture !",
+      "code": "fin",
+      "alts": [],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "selfColor": "#61bfda"
+    }
+  ]
+}

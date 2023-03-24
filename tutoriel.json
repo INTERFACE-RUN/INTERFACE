@@ -6,12 +6,12 @@
   "theme": "920",
   "content": [
     {
-      "incipit": "Bienvenue sur le tutoriel d'INTERFACE.RUN \nPour poursuivre, appuyez sur \"continuer\".",
+      "incipit": "Welcome to the tutorial of INTERFACE.RUN \nClick on \"next\" to continue.",
       "code": "racine",
       "alts": [
         {
           "altNum": 1,
-          "text": "continuer",
+          "text": "NEXT",
           "code": "carte2"
         }
       ],
@@ -21,12 +21,12 @@
       "selfColor": "#61bfda"
     },
     {
-      "incipit": "INTERFACE.RUN utilise un concept simple: le lecteur lit une suite de paragraphes dans une fenêtre, puis doit choisir une des options disponibles pour afficher la suite.",
+      "incipit": "INTERFACE.RUN is a simple process: the reader reads a paragraph from the main thread and then makes a choice.",
       "code": "carte2",
       "alts": [
         {
           "altNum": 1,
-          "text": "Suite",
+          "text": "Next",
           "code": "cart3"
         }
       ],
@@ -35,17 +35,17 @@
       "selfColor": "#61bfda"
     },
     {
-      "incipit": "Il peut y avoir plusieurs options disponibles.",
+      "incipit": "Sometimes, there is more than one option.",
       "code": "cart3",
       "alts": [
         {
           "altNum": 1,
-          "text": "Choisir l'option 1",
+          "text": "Choose option 1",
           "code": "nextop"
         },
         {
           "altNum": 2,
-          "text": "Choisir l'option 2",
+          "text": "Choose option 2",
           "code": "nextop"
         }
       ],
@@ -54,7 +54,7 @@
       "selfColor": "#61bfda"
     },
     {
-      "incipit": "Il peut même y avoir plus de deux options. Lorsque c'est le cas, un bouton \"SWITCH\" devient disponible. Cliquer sur ce bouton permet de circuler entre les options disponibles.",
+      "incipit": "Sometimes, there are even more than two options deux options. Click on the \"SWITCH\" button to circulate among possible options.",
       "code": "nextop",
       "alts": [
         {
@@ -78,12 +78,12 @@
       "selfColor": "#61bfda"
     },
     {
-      "incipit": "Vous pouvez relire le contenu des paragraphes et options choisis dans le passé en remontant la fenêtre principale comme vous le feriez sur une page normale.",
+      "incipit": "You can scroll up to read what has been printed in the past. This might help you with your new choices.",
       "code": "cart5",
       "alts": [
         {
           "altNum": 1,
-          "text": "Suite",
+          "text": "Next",
           "code": "slider"
         }
       ],
@@ -92,12 +92,12 @@
       "selfColor": "#61bfda"
     },
     {
-      "incipit": "Vous pouvez aussi naviguer rapidement en utilisant l'ascenseur situé à droite de cette fenêtre.",
+      "incipit": "You can scroll faster using the column on the right.",
       "code": "slider",
       "alts": [
         {
           "altNum": 1,
-          "text": "Suite",
+          "text": "Next",
           "code": "Themes"
         }
       ],
@@ -106,12 +106,12 @@
       "selfColor": "#61bfda"
     },
     {
-      "incipit": "Cette configuration est commune à tous les thèmes. L'interface graphique peut changer selon les histoires, mais ces grands principes de lecture et de navigation restent communs.",
+      "incipit": "This is common to all themes. The graphic interface can change depending on the stories you are reading, but these mechanics remain constant.",
       "code": "Themes",
       "alts": [
         {
           "altNum": 1,
-          "text": "Fin",
+          "text": "End",
           "code": "fin"
         }
       ],
@@ -120,7 +120,7 @@
       "selfColor": "#61bfda"
     },
     {
-      "incipit": "Merci d'avoir suivi ce tutoriel. Vous pouvez désormais fermer cette fenêtre et commencer votre lecture !",
+      "incipit": "Thank you for reading this tutorial. You can now exit it using the menu on the top right of your screen. Enjoy reading on INTERFACE!",
       "code": "fin",
       "alts": [],
       "dependencyPath": [],

@@ -17,6 +17,10 @@ body {
   src: url('themes/920/fonts/DSEG7/DSEG7ClassicMini-Bold.woff2') format('woff2');
 }
 
+
+
+
+
 @font-face {
   font-family: 'MajorMonoDisplay';
   font-weight: 400;
@@ -341,3 +345,4 @@ text-align: right;
   flex-direction: column;
 
 }
+

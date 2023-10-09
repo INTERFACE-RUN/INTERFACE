@@ -1,6 +1,7 @@
 {
   "contract": "KT1-interface",
   "token_id": 0,
+  "blockchain": "tezos",
   "title": "Tutoriel",
   "author": "INTERFACE",
   "theme": "920",
@@ -54,7 +55,7 @@
       "selfColor": "#61bfda"
     },
     {
-      "incipit": "Sometimes, there are even more than two options deux options. Click on the \"SWITCH\" button to circulate among possible options.",
+      "incipit": "Sometimes, there are even more than two options. Click on the \"SWITCH\" button to circulate among possible options.",
       "code": "nextop",
       "alts": [
         {

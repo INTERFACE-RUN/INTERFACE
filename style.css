@@ -60,7 +60,8 @@ body{width: 100%; height: 100%;overflow: hidden;touch-action: none;}
 }
 
 #timeSlider{
-cursor: ns-resize;
+  cursor: ns-resize;
+  position: absolute;
 }
 
 #crux {

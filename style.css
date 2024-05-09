@@ -18,27 +18,10 @@ body {
 }
 
 
-
-
-
 @font-face {
   font-family: 'MajorMonoDisplay';
   font-weight: 400;
   src: url('themes/4550/fonts/MajorMonoDisplay-Regular.ttf') format('truetype');
-}
-
-
-
-@keyframes
-fadeout {
-  from {opacity:1;}
-  to {opacity:0;}
-}
-
-@keyframes
-fadein {
-  from {opacity:0;}
-  to {opacity:1;}
 }
 
 html{width:100%; height:100%; overflow:hidden; touch-action: none;}
@@ -291,7 +274,6 @@ text-align: right;
 
 #backToMenu{
   display: block;
-  opacity: 0.3;
 }
 
 .cardDiv{
@@ -321,7 +303,7 @@ text-align: right;
   width: 600px;
   overflow-y: scroll;
   background-color: white;
-  opacity: 0.8;
+  
   background: repeating-linear-gradient( -45deg, #fd1533, #fd1533 2px, white 0px, white 15px );
 }
 

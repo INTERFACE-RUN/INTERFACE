@@ -1,0 +1,129 @@
+{
+  "title": "Tutoriel",
+  "author": "INTERFACE",
+  "theme": "920",
+  "content": [
+    {
+      "incipit": "Welcome to the tutorial of INTERFACE.RUN \nClick on \"next\" to continue.",
+      "code": "racine",
+      "alts": [
+        {
+          "altNum": 1,
+          "text": "NEXT",
+          "code": "carte2"
+        }
+      ],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "img": "pegas1.png",
+      "selfColor": "#61bfda"
+    },
+    {
+      "incipit": "INTERFACE.RUN is a simple process: the reader reads a paragraph from the main thread and then makes a choice.",
+      "code": "carte2",
+      "alts": [
+        {
+          "altNum": 1,
+          "text": "Next",
+          "code": "cart3"
+        }
+      ],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "selfColor": "#61bfda"
+    },
+    {
+      "incipit": "Sometimes, there are more than one option.",
+      "code": "cart3",
+      "alts": [
+        {
+          "altNum": 1,
+          "text": "Choose option 1",
+          "code": "nextop"
+        },
+        {
+          "altNum": 2,
+          "text": "Choose option 2",
+          "code": "nextop"
+        }
+      ],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "selfColor": "#61bfda"
+    },
+    {
+      "incipit": "Sometimes, there are even more than two options. Click on the \"SWITCH\" button to circulate among possible options.",
+      "code": "nextop",
+      "alts": [
+        {
+          "altNum": 1,
+          "text": "Option 1",
+          "code": "cart5"
+        },
+        {
+          "altNum": 2,
+          "text": "Option 2",
+          "code": "cart5"
+        },
+        {
+          "altNum": 3,
+          "text": "Option 3",
+          "code": "cart5"
+        }
+      ],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "selfColor": "#61bfda"
+    },
+    {
+      "incipit": "You can scroll up to read what has been printed in the past. This might help you with your new choices.",
+      "code": "cart5",
+      "alts": [
+        {
+          "altNum": 1,
+          "text": "Next",
+          "code": "slider"
+        }
+      ],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "selfColor": "#61bfda"
+    },
+    {
+      "incipit": "You can scroll faster using the column on the right.",
+      "code": "slider",
+      "alts": [
+        {
+          "altNum": 1,
+          "text": "Next",
+          "code": "Themes"
+        }
+      ],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "selfColor": "#61bfda"
+    },
+    {
+      "incipit": "This is common to all themes. The graphic interface can change depending on the stories you are reading, but these mechanics remain constant.",
+      "code": "Themes",
+      "alts": [
+        {
+          "altNum": 1,
+          "text": "End",
+          "code": "fin"
+        }
+      ],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "selfColor": "#61bfda"
+    },
+    {
+      "incipit": "Thank you for reading this tutorial. You can now exit it using the menu on the top right of your screen. Enjoy reading on INTERFACE!",
+      "code": "fin",
+      "alts": [],
+      "dependencyPath": [],
+      "computeOperation": {},
+      "selfColor": "#61bfda"
+    }
+  ]
+}

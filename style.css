@@ -122,8 +122,9 @@ height: 100%;
   border: 1px dashed gray;
   padding: 2%;
   height: 70%;
-  overflow-y: scroll;
-
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: white transparent;
 }
 
 #menuConteneur{

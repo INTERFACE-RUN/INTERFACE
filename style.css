@@ -300,6 +300,8 @@ text-align: right;
   box-shadow: 0px 0px 4px gray;
   z-index: 20;
   background: white;
+  width:calc(100% - 600px);
+  min-width: 600px;
 }
 
 #cardcol{
